@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+     h1{
+            font-weight: 900;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(155, 218, 31);
+            text-align: center;
+            text-decoration: underline;
+            font-size: 30px;
+            margin-bottom: 30px;
+            margin-top: 9px;
+     }
+     .p{
+            text-align: center;
+            font-weight: 800;
+            font-size: 15px;
+            color: black;
+        }
+
+        form{
+            margin-top: 1px;
+            align-items: center;
+            border: 3px black solid;
+            margin-left: 28%;
+            border-radius: 10px;
+            padding: 10px;
+            color: black;
+            font-weight: 900;
+            height: 60%;
+            width: 40%;
+            background-image: url(don.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        form input{
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body class="contactbody">
+        <section class="contact">
+            <div class="contact-form">
+                <h1>Contact <span>Us</span></h1>
+                <p class="p">We are always out there to help you! Fill out the form given below and get a reply from us within 2 business days.</p>
+            <form>
+              <p>Enter your Name:</p> <p><input type="text" name="myname" placeholder="your Name" required></p>
+               <p>Enter your e-mail:</p> <p> <input type="email" name="email" placeholder="Your e-mail" required></p>
+               <p>what brings you here:</p> <p><input type="text" name="subject" placeholder="Enter Here" required></p>
+               <p>Enter Your Meassage:</p> <p> <textarea name="message" cols="50" rows="6"  placeholder="Your Message" required></textarea></p>
+                <input type="submit" value="Submit" class="submit-btn" style="margin-left: 190px;">
+            </div>
+</section>
+
+</body>
+</html>

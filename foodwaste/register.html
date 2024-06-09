@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Food</title>
+</head>
+<style>
+    body{
+            margin: 0px;
+            padding: 0px;
+        }
+     h1{
+            font-weight: 900;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(155, 218, 31);
+            text-align: center;
+            text-decoration: underline;
+            font-size: 30px;
+            margin-bottom: 20px;
+            margin-top: 1px;
+     }
+     .p{
+            text-align: center;
+            font-weight: 800;
+            font-size: 15px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        form{
+            margin-top: 1px;
+            margin-left: 9px;
+            align-items: center;
+            border: 3px transparent solid;
+            border-radius: 10px;
+            padding: 0px;
+            background-color: rgb(186, 240, 78);
+            color: black;
+            margin: 0px;
+            font-weight: 900;
+            margin-left: 9px;
+            padding-left: 14px;
+            height: auto;
+            width: 550px;
+            padding-bottom: 3px;
+            margin-bottom: 3px;
+        }
+        .sec2{
+            background-image: url(dontate.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 1px;
+            margin-left: 9px;
+            border: 3px transparent solid;
+            border-radius: 50%;
+            height: 500px;
+            width: 42%;
+        }
+        form input{
+            padding: 7px;
+        }
+
+        .main{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0px;
+            padding: 0px;
+        }
+        .submitbtn{
+            padding: 5px;
+            border-radius: 3px;
+            background-color: white;
+            border-color: white;
+        }
+        .submitbtn:hover{
+            background-color: white;
+            color: black;
+        }
+</style>
+
+<body>
+    <div class="main">
+        <div class="sec1">
+    <section class="registration">
+        <div class="register-form">
+            <h1>Donate <span>Food</span></h1>
+            <p class="p">It's not how much we give, but how much love we put into giving!</p> <br>
+            <form action="" onsubmit="return validateform()">
+                <p>Enter your Name:<input type="text" name="myname" placeholder="your Name" required></p>
+                <p>Enter your e-mail:<input type="email" name="email" placeholder="Your e-mail" required></p>
+                <p>Enter Phone No:<input type="tel" name="myphone" placeholder="Your Phone No." id="phonenum" required></p>
+                <p>Enter Address:<textarea name="note" id="" cols="52" rows="1" required style="margin-top: 3px; padding: 5px;"></textarea></p>
+            <h4>Category  :
+            <input type="radio" name="myfood" id="" required> Veg &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <input type="radio" name="myfood" id=""> Non-Veg &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <input type="radio" name="myfood" id=""> Both </h4>
+            <h4>Quanity (in Kg)
+            <input type="number" name="quantity" id=""></h4>
+            <h4>Food Preparation Date and Time
+            <input type="datetime-local" name="fooddate" id="" required> <br> <br></h4>
+            <textarea name="note" id="" cols="52" rows="1" placeholder="Special Note"></textarea>
+            <p>
+            <input type="submit" value="Submit" class="submitbtn">
+            <input type="checkbox" name="t&c" checked required class="check"> I accept the Terms & Conditions.<br>
+            </p>
+
+        </form>
+        </div>
+    </section>
+    </div>
+    <div class="sec2">
+    </div>
+    </div>
+<!-- Javascript -->
+<script>
+    function validateform(){ 
+        var tel=document.getElementById("phonenum").value;  
+
+        if(tel.length<10){  
+            alert("Phone number must be of atleast 10 digits!");  
+            return false;  
+        } else if(isNaN(tel)){
+            alert("Phone number should not include character!");
+            return false;
+        }
+        return true;
+}  
+</script>
+
+</body>
+</html>
